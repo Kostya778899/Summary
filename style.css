@@ -37,7 +37,18 @@ a:hover:after{
 
 fieldset{
 	margin: 0px;
-	width: 600px;
+}
+fieldset legend p{
+	letter-spacing: 0.5px;
+	font-size: 27px;
+}
+
+
+#addition{
+	opacity: 0.8;
+	font-size: 20px;
+	word-spacing: -5px;
+	letter-spacing: 0.2px;
 }
 
 
@@ -53,3 +64,32 @@ fieldset{
 	padding: 0;
 }
 
+fieldset.practice{
+	width: 70%;
+
+	--color0: #750550;
+	--color1: #570530;
+	--size: 2px;
+	--rotation: 25deg;
+	border: none;
+	border-top: var(--size) solid var(--color1);
+    border-bottom: var(--size) solid var(--color0);
+    background-image: 
+        linear-gradient(var(--rotation), var(--color0), var(--color1)),
+        linear-gradient(var(--rotation), var(--color0), var(--color1));
+    background-size: var(--size) 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+}
+ul.Achievements{
+	margin-top: 0;
+	padding-inline-start: 20px;
+}
+li.Achievement{
+	padding-top: 10px;
+	line-height: 0.95;
+}
+
+fieldset.information-born{
+	border: none;
+}
