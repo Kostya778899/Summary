@@ -1,0 +1,55 @@
+body{
+	padding: 45px 60px 25px 60px;
+}
+
+p{
+	font-size: 25px;
+	font-family: monospace;
+	/*font-family: fantasy;*/
+	margin: 0px;
+}
+
+a{
+	position: relative;
+	font-size: 25px;
+	font-family: monospace;
+	margin: 0px;
+
+	transition: all 0.1s ease;
+	color: #9FB4FF;
+	text-decoration: none;
+
+}
+a:hover{color:#FFD36E;}
+a:after{
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;
+	height: 2px;
+	background-color: #FFD36E;
+	content: "";
+	transition: width 0.25s ease-out;
+}
+a:hover:after{
+	width: 100%;
+}
+
+fieldset{
+	margin: 0px;
+	width: 600px;
+}
+
+
+.name{
+	font-size: 60px;
+	font-weight: 700;
+	font-weight: bold;
+}
+.contacts{
+	list-style-type: none;
+	margin: 0;
+	margin-left: 20px;
+	padding: 0;
+}
+
